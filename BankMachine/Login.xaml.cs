@@ -16,21 +16,22 @@ using System.Windows.Shapes;
 namespace BankMachine
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Login : UserControl
     {
-        public MainWindow()
+        public Login()
         {
             InitializeComponent();
-
-            Login login = new Login();
-
-            ContentMain.Content = login;
-
         }
 
- 
+        private void EnterAccountNumber(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void ScanCard(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
