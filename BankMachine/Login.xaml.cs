@@ -24,14 +24,14 @@ namespace BankMachine
         {
             InitializeComponent();
         }
-
         private void EnterAccountNumber(object sender, RoutedEventArgs e)
         {
 
         }
         private void ScanCard(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ScanCardClickBool = true;
         }
+        
     }
 }
