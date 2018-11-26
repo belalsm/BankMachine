@@ -20,17 +20,34 @@ namespace BankMachine
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool ScanCardClickBool = false;
+        public int test = 0;
         public MainWindow()
         {
             InitializeComponent();
-
+            System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer(); //Initialize a new timer object
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick); //Link the Tick event with dispatcherTimer_Tick
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1); //Set the Timer Interval
+            dispatcherTimer.Start(); //Start the Timer
             Login login = new Login();
 
             ContentMain.Content = login;
-
         }
 
- 
+        public void ScanCardClick()
+        {
+            test = 1;
+        }
+
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            if (ScanCardClickBool)
+            {
+                ScanCardClickBool = false;
+                ScanCardClick();
+            }
+        }
+
 
     }
 }
