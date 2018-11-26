@@ -54,75 +54,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Account.cs" />
-    <Compile Include="CashWithdrawlPage.xaml.cs">
-      <DependentUpon>CashWithdrawlPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CashWithdrawlPageAccountSelection.xaml.cs">
-      <DependentUpon>CashWithdrawlPageAccountSelection.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CashWithdrawlPageConfirmation.xaml.cs">
-      <DependentUpon>CashWithdrawlPageConfirmation.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="obj\Debug\AccountLogin.g.i.cs" />
-    <Compile Include="obj\Debug\App.g.i.cs" />
-    <Compile Include="obj\Debug\CashWithdrawlPage.g.i.cs" />
-    <Compile Include="obj\Debug\CashWithdrawlPageAccountSelection.g.i.cs" />
-    <Compile Include="obj\Debug\CashWithdrawlPageConfirmation.g.i.cs" />
-    <Compile Include="obj\Debug\CompleteTransactionsPage.g.i.cs" />
-    <Compile Include="obj\Debug\DepositPage.g.i.cs" />
-    <Compile Include="obj\Debug\DepositPageAccountSelection.g.i.cs" />
-    <Compile Include="obj\Debug\DepositPageConfirmation.g.i.cs" />
-    <Compile Include="obj\Debug\EnterAccountInfoPage.g.i.cs" />
-    <Compile Include="obj\Debug\GeneratedInternalTypeHelper.g.i.cs" />
-    <Compile Include="obj\Debug\Login.g.i.cs" />
-    <Compile Include="obj\Debug\MainPage.g.i.cs" />
-    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
-    <Compile Include="obj\Debug\ScanCardPage.g.i.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="obj\Debug\UserControl1.g.i.cs" />
-    <Compile Include="obj\Debug\UserControls\Login.g.i.cs" />
-    <Compile Include="ScanCardPage.xaml.cs">
-      <DependentUpon>ScanCardPage.xaml</DependentUpon>
-    </Compile>
-    <Page Include="CashWithdrawlPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="CashWithdrawlPageAccountSelection.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="CashWithdrawlPageConfirmation.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="CompleteTransactionsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DepositPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DepositPageAccountSelection.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DepositPageConfirmation.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="EnterAccountInfoPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -131,24 +62,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CompleteTransactionsPage.xaml.cs">
-      <DependentUpon>CompleteTransactionsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DepositPage.xaml.cs">
-      <DependentUpon>DepositPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DepositPageAccountSelection.xaml.cs">
-      <DependentUpon>DepositPageAccountSelection.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DepositPageConfirmation.xaml.cs">
-      <DependentUpon>DepositPageConfirmation.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EnterAccountInfoPage.xaml.cs">
-      <DependentUpon>EnterAccountInfoPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -156,10 +69,6 @@
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ScanCardPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -183,9 +92,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="obj\Debug\BankMachine_MarkupCompile.i.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,13 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\" />
-    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
