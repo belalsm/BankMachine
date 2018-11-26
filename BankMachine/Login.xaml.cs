@@ -31,7 +31,7 @@ namespace BankMachine
         }
         private void ScanCard(object sender, RoutedEventArgs e)
         {
-            MainWindow.scanScreen = true;
+            MainWindow.ChangeToScanScreen();
         }
     }
 }
