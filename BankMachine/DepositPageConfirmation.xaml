@@ -6,6 +6,15 @@
              xmlns:local="clr-namespace:BankMachine"
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
-            
+        <Label Content="Please confirm this transaction." HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Deposit:" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Amount" HorizontalAlignment="Left" Margin="225,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="To:" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Account Type" HorizontalAlignment="Left" Margin="225,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+
+        <Button Content="Change Amount" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmDepositAmountChangeButton"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmDepositAmountCancelButton"/>
+        <Button Content="Confirm" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmDepositAmountOkButton"/>
+
     </Grid>
 </UserControl>
