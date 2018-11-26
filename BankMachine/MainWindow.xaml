@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankMachine"      
         mc:Ignorable="d"
-        Title="BankMachine" Height="350" Width="500">
+        Title="BankMachine" Height="375" Width="500">
     <Grid Background="#FF35668E">
         <ContentControl  Name="ContentMain"  Width="Auto" Opacity="1" Background="Transparent" ></ContentControl>
     </Grid>
