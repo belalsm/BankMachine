@@ -16,25 +16,23 @@ using System.Windows.Shapes;
 namespace BankMachine
 {
     /// <summary>
-    /// Interaction logic for EnterAccountInfoPage.xaml
+    /// Interaction logic for TransferPage.xaml
     /// </summary>
-    public partial class EnterAccountInfoPage : UserControl
+    public partial class TransferPage : UserControl
     {
-        public EnterAccountInfoPage()
+        public TransferPage()
         {
             InitializeComponent();
         }
 
-        private void EnterAccountInfoCancelButton(object sender, RoutedEventArgs e)
+        private void EnterTransferAmountCancelButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void EnterAccountInfoOkButton(object sender, RoutedEventArgs e)
+        private void EnterTransferAmountOkButton(object sender, RoutedEventArgs e)
         {
 
         }
     }
-
-
 }

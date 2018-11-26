@@ -24,5 +24,15 @@ namespace BankMachine
         {
             InitializeComponent();
         }
+
+        private void CompleteTransactionsButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MakeAnotherTransactionButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

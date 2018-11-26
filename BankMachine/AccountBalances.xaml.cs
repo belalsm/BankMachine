@@ -16,25 +16,24 @@ using System.Windows.Shapes;
 namespace BankMachine
 {
     /// <summary>
-    /// Interaction logic for EnterAccountInfoPage.xaml
+    /// Interaction logic for AccountBalances.xaml
     /// </summary>
-    public partial class EnterAccountInfoPage : UserControl
+    public partial class AccountBalances : UserControl
     {
-        public EnterAccountInfoPage()
+        public AccountBalances()
         {
             InitializeComponent();
         }
 
-        private void EnterAccountInfoCancelButton(object sender, RoutedEventArgs e)
+
+        private void AccountBalancesCancelButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void EnterAccountInfoOkButton(object sender, RoutedEventArgs e)
+        private void AccountBalancesOkButton(object sender, RoutedEventArgs e)
         {
 
         }
     }
-
-
 }

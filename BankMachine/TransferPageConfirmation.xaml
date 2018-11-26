@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="BankMachine.CashWithdrawlPageConfirmation"
+﻿<UserControl x:Class="BankMachine.TransferPageConfirmation"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,14 +8,16 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
         <Label Content="Please confirm this transaction." HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Label Content="Withdraw:" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Transfer:" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="Amount" HorizontalAlignment="Left" Margin="235,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="From:" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="Account Type" HorizontalAlignment="Left" Margin="235,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="To:" HorizontalAlignment="Left" Margin="150,175,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Account Type" HorizontalAlignment="Left" Margin="235,175,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
 
-        <Button Content="Change Amount" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmWithdrawlAmountChangeButton"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmWithdrawlAmountCancelButton"/>
-        <Button Content="Confirm" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmWithdrawlAmountOkButton"/>
+        <Button Content="Change Amount" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmTransferAmountChangeButton"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmTransferAmountCancelButton"/>
+        <Button Content="Confirm" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="ConfirmTransferAmountOkButton"/>
 
     </Grid>
 </UserControl>
