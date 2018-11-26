@@ -5,8 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BankMachine"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
-            
+        <Label Content="Your transaction is complete." HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Would you like to make another transaction?" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Button Content="Make Another Transaction" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="160" Height="40" Click="MakeAnotherTransactionButton"/>
+        <Button Content="Complete Transactions" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="160" Height="40" Click="CompleteTransactionsButton"/>
     </Grid>
 </UserControl>
