@@ -27,12 +27,12 @@ namespace BankMachine
 
         private void CompleteTransactionsButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToLogin();
         }
 
         private void MakeAnotherTransactionButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToMainPage();
         }
     }
 }

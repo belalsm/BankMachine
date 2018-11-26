@@ -27,12 +27,12 @@ namespace BankMachine
 
         private void EnterAccountInfoCancelButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToLogin();
         }
 
         private void EnterAccountInfoOkButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToMainPage();
         }
     }
 

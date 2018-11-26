@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="BankMachine" Height="375" Width="500">
     <Grid Background="#FF35668E">
-        <ContentControl  Name="ContentMain"  Width="Auto" Opacity="1" Background="Transparent" ></ContentControl>
+        <ContentControl Name="ContentMain"  Width="Auto" Opacity="1" Background="Transparent" ></ContentControl>
     </Grid>
 
 </Window>

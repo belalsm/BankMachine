@@ -20,30 +20,97 @@ namespace BankMachine
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static bool scanScreen = false; //This must be public and static so that it can be called from your second Window
-        Login login = new Login();
-        ScanCardPage scanCardPage = new ScanCardPage();
+        public static ContentControl main;
+        public static AccountBalances accountBalances = new AccountBalances();
+        public static AccountBalancesAccountSelection accountBalancesAccountSelection = new AccountBalancesAccountSelection();
+        public static CashWithdrawlPage cashWithdrawlPage = new CashWithdrawlPage();
+        public static CashWithdrawlPageAccountSelection cashWithdrawlPageAccountSelection = new CashWithdrawlPageAccountSelection();
+        public static CashWithdrawlPageConfirmation cashWithdrawlPageConfirmation = new CashWithdrawlPageConfirmation();
+        public static CompleteTransactionsPage completeTransactionsPage = new CompleteTransactionsPage();
+        public static DepositPage depositPage = new DepositPage();
+        public static DepositPageAccountSelection depositPageAccountSelection = new DepositPageAccountSelection();
+        public static DepositPageConfirmation depositPageConfirmation = new DepositPageConfirmation();
+        public static EnterAccountInfoPage enterAccountInfoPage = new EnterAccountInfoPage();
+        public static Login login = new Login();
+        public static MainPage mainPage = new MainPage();
+        public static ScanCardPage scanCardPage = new ScanCardPage();
+        public static TransferPage transferPage = new TransferPage();
+        public static TransferPageConfirmation transferPageConfirmation = new TransferPageConfirmation();
+        public static TransferPageFromAccountSelection transferPageFromAccountSelection = new TransferPageFromAccountSelection();
+        public static TransferPageToAccountSelection transferPageToAccountSelection = new TransferPageToAccountSelection();
         public MainWindow()
         {
             InitializeComponent();
-
-            ContentMain.Content = login;
-            System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer(); //Initialize a new timer object
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick); //Link the Tick event with dispatcherTimer_Tick
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1); //Set the Timer Interval
-            dispatcherTimer.Start(); //Start the Timer
+            main = ContentMain;
+            main.Content = login;
         }
-        public void ChangeToScanScreen()
+        public static void ChangeToAccountBalancesScreen()
         {
-            ContentMain.Content = scanCardPage;
+            main.Content = accountBalances;
         }
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        public static void ChangeToAccountBalancesSelectionScreen()
         {
-            if (scanScreen)
-            {
-                scanScreen = false;
-                ChangeToScanScreen();
-            }
+            main.Content = accountBalancesAccountSelection;
+        }
+        public static void ChangeToCashWithdrawlPage()
+        {
+            main.Content = cashWithdrawlPage;
+        }
+        public static void ChangeToCashWithdrawlPageAccountSelection()
+        {
+            main.Content = cashWithdrawlPageAccountSelection;
+        }
+        public static void ChangeToCashWithdrawlPageConfirmation()
+        {
+            main.Content = cashWithdrawlPageConfirmation;
+        }
+        public static void ChangeToCompleteTransactionsPage()
+        {
+            main.Content = completeTransactionsPage;
+        }
+        public static void ChangeToDepositPage()
+        {
+            main.Content = depositPage;
+        }
+        public static void ChangeToDepositPageAccountSelection()
+        {
+            main.Content = depositPageAccountSelection;
+        }
+        public static void ChangeToDepositPageConfirmation()
+        {
+            main.Content = depositPageConfirmation;
+        }
+        public static void ChangeToEnterAccountInfoPage()
+        {
+            main.Content = enterAccountInfoPage;
+        }
+        public static void ChangeToLogin()
+        {
+            main.Content = login;
+        }
+        public static void ChangeToMainPage()
+        {
+            main.Content = mainPage;
+        }
+        public static void ChangeToScanScreen()
+        {
+            main.Content = scanCardPage;
+        }
+        public static void ChangeToTransferPage()
+        {
+            main.Content = transferPage;
+        }
+        public static void ChangeToTransferPageConfirmation()
+        {
+            main.Content = transferPageConfirmation;
+        }
+        public static void ChangeToTransferPageFromAccountSelection()
+        {
+            main.Content = transferPageFromAccountSelection;
+        }
+        public static void ChangeToTransferPageToAccountSelection()
+        {
+            main.Content = transferPageToAccountSelection;
         }
 
 

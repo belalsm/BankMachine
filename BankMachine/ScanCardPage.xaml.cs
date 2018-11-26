@@ -27,12 +27,12 @@ namespace BankMachine
 
         private void ScanCardOkButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToMainPage();
         }
 
         private void ScanCardCancelButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToLogin();
         }
     }
 }
