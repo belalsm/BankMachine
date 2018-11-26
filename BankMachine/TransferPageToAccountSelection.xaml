@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="BankMachine.CashWithdrawlPageAccountSelection"
+﻿<UserControl x:Class="BankMachine.TransferPageToAccountSelection"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,10 +8,10 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
         <Label Content="Please Select an Account" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="236" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="From Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="WithdrawFromChequingButton"/>
-        <Button Content="From Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="WithdrawFromSavingsButton"/>
-        <Button Content="From Credit Card" HorizontalAlignment="Right" Margin="0,205,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="WithdrawFromCreditCardButton"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="WithdrawlCancelButton"/>
+        <Button Content="To Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferToChequingButton"/>
+        <Button Content="To Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferToSavingsButton"/>
+        <Button Content="To Credit Card" HorizontalAlignment="Right" Margin="0,205,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferToCreditCardButton"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="TransferToCancelButton"/>
 
     </Grid>
 </UserControl>

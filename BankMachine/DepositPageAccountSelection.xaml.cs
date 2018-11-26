@@ -26,17 +26,17 @@ namespace BankMachine
         }
 
 
-        private void ToChequingButton(object sender, RoutedEventArgs e)
+        private void DepositToChequingButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void ToSavingsButton(object sender, RoutedEventArgs e)
+        private void DepositToSavingsButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void ToCreditCardButton(object sender, RoutedEventArgs e)
+        private void DepositToCreditCardButton(object sender, RoutedEventArgs e)
         {
 
         }

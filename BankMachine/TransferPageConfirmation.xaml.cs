@@ -24,5 +24,20 @@ namespace BankMachine
         {
             InitializeComponent();
         }
+
+        private void ConfirmTransferAmountChangeButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ConfirmTransferAmountCancelButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ConfirmTransferAmountOkButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

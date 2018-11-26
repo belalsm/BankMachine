@@ -91,11 +91,14 @@
     <Compile Include="TransferPage.xaml.cs">
       <DependentUpon>TransferPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TransferPageAccountSelection.xaml.cs">
-      <DependentUpon>TransferPageAccountSelection.xaml</DependentUpon>
-    </Compile>
     <Compile Include="TransferPageConfirmation.xaml.cs">
       <DependentUpon>TransferPageConfirmation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransferPageFromAccountSelection.xaml.cs">
+      <DependentUpon>TransferPageFromAccountSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransferPageToAccountSelection.xaml.cs">
+      <DependentUpon>TransferPageToAccountSelection.xaml</DependentUpon>
     </Compile>
     <Page Include="AccountBalances.xaml">
       <SubType>Designer</SubType>
@@ -168,11 +171,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TransferPageAccountSelection.xaml">
+    <Page Include="TransferPageConfirmation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TransferPageConfirmation.xaml">
+    <Page Include="TransferPageFromAccountSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransferPageToAccountSelection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

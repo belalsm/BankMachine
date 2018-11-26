@@ -16,31 +16,30 @@ using System.Windows.Shapes;
 namespace BankMachine
 {
     /// <summary>
-    /// Interaction logic for CashWithdrawlPageAccountSelection.xaml
+    /// Interaction logic for TransferPageToAccountSelection.xaml
     /// </summary>
-    public partial class CashWithdrawlPageAccountSelection : UserControl
+    public partial class TransferPageToAccountSelection : UserControl
     {
-        public CashWithdrawlPageAccountSelection()
+        public TransferPageToAccountSelection()
         {
             InitializeComponent();
         }
-
-        private void WithdrawFromChequingButton(object sender, RoutedEventArgs e)
+        private void TransferToChequingButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void WithdrawFromSavingsButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-        
-        private void WithdrawFromCreditCardButton(object sender, RoutedEventArgs e)
+        private void TransferToSavingsButton(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void WithdrawlCancelButton(object sender, RoutedEventArgs e)
+        private void TransferToCreditCardButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TransferToCancelButton(object sender, RoutedEventArgs e)
         {
 
         }

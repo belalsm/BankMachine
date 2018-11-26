@@ -5,8 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BankMachine"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
-            
+        <Label Content="Enter transfer amount and press ok" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Margin="0,150,0,0"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="EnterTransferAmountCancelButton"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="EnterTransferAmountOkButton"/>
+
     </Grid>
 </UserControl>
