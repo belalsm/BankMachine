@@ -24,5 +24,16 @@ namespace BankMachine
         {
             InitializeComponent();
         }
+
+
+        private void AccountBalancesCancelButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AccountBalancesOkButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

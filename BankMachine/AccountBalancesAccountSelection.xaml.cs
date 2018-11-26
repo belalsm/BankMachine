@@ -24,5 +24,25 @@ namespace BankMachine
         {
             InitializeComponent();
         }
+
+        private void BalanceForChequingButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BalanceFoSavingsButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BalanceFoCreditCardButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BalanceCancelButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
