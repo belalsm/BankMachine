@@ -20,17 +20,32 @@ namespace BankMachine
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static bool scanScreen = false; //This must be public and static so that it can be called from your second Window
+        Login login = new Login();
+        ScanCardPage scanCardPage = new ScanCardPage();
         public MainWindow()
         {
             InitializeComponent();
 
-            Login login = new Login();
-
             ContentMain.Content = login;
-
+            System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer(); //Initialize a new timer object
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick); //Link the Tick event with dispatcherTimer_Tick
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 1); //Set the Timer Interval
+            dispatcherTimer.Start(); //Start the Timer
+        }
+        public void ChangeToScanScreen()
+        {
+            ContentMain.Content = scanCardPage;
+        }
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            if (scanScreen)
+            {
+                scanScreen = false;
+                ChangeToScanScreen();
+            }
         }
 
- 
 
     }
 }
