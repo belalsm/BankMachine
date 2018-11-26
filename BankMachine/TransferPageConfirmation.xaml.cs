@@ -27,17 +27,17 @@ namespace BankMachine
 
         private void ConfirmTransferAmountChangeButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToTransferPage();
         }
 
         private void ConfirmTransferAmountCancelButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToMainPage();
         }
 
         private void ConfirmTransferAmountOkButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToCompleteTransactionsPage();
         }
     }
 }

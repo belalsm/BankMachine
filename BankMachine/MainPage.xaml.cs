@@ -27,27 +27,27 @@ namespace BankMachine
 
         private void CashWithdrawlButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToCashWithdrawlPageAccountSelection();
         }
 
         private void DepositButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToDepositPageAccountSelection();
         }
 
         private void TransferButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToTransferPageFromAccountSelection();
         }
 
         private void AccountBalancesButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToAccountBalancesSelectionScreen();
         }
 
         private void CancelButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToLogin();
         }
     }
 }

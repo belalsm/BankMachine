@@ -28,12 +28,12 @@ namespace BankMachine
 
         private void AccountBalancesCancelButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToMainPage();
         }
 
         private void AccountBalancesOkButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToCompleteTransactionsPage();
         }
     }
 }

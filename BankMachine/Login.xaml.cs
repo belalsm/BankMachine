@@ -27,7 +27,7 @@ namespace BankMachine
 
         private void EnterAccountNumber(object sender, RoutedEventArgs e)
         {
-
+            MainWindow.ChangeToEnterAccountInfoPage();
         }
         private void ScanCard(object sender, RoutedEventArgs e)
         {
