@@ -100,17 +100,25 @@ namespace BankMachine
             amount = 0;
             main.Content = completeTransactionsPage;
         }
-        public static void ChangeToDepositPage()
+        public static void ChangeToDepositPage(Account.AccountType toAccount)
         {
+            to = toAccount;
+            depositPage.Amount = 0;
             main.Content = depositPage;
         }
         public static void ChangeToDepositPageAccountSelection()
         {
             main.Content = depositPageAccountSelection;
         }
-        public static void ChangeToDepositPageConfirmation()
+        public static void ChangeToDepositPageConfirmation(int depositAmount)
         {
+            amount = depositAmount;
+            depositPageConfirmation.Amount = amount;
+            depositPageConfirmation.AccountType = to.ToString();
+            depositPageConfirmation.typeEnum = to;
             main.Content = depositPageConfirmation;
+            currentTransaction = Account.AccountTransaction.Deposit;
+
         }
         public static void ChangeToEnterAccountInfoPage()
         {
