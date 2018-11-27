@@ -11,8 +11,8 @@
         <Label Content="Enter PIN" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="84" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="EnterAccountInfoCancelButton"/>
         <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="EnterAccountInfoOkButton"/>
-        <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200" Margin="0,115,0,0"/>
-        <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="70" Margin="0,185,0,0"/>
+        <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Margin="0,115,0,0" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Center" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="70" Margin="0,185,0,0"/>
 
     </Grid>
 </UserControl>

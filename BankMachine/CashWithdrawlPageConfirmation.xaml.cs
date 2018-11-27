@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,16 +19,46 @@ namespace BankMachine
     /// <summary>
     /// Interaction logic for CashWithdrawlPageConfirmation.xaml
     /// </summary>
-    public partial class CashWithdrawlPageConfirmation : UserControl
+    public partial class CashWithdrawlPageConfirmation : UserControl, INotifyPropertyChanged
     {
+        public int amount;
+        public string accountType;
+        public Account.AccountType typeEnum;
+
+        public int Amount
+        {
+            get { return amount; }
+            set
+            {
+                amount = value; NotifyPropertyChanged("Amount");
+            }
+        }
+
+        public string AccountType
+        {
+            get { return accountType; }
+            set
+            {
+                accountType = value; NotifyPropertyChanged("AccountType");
+            }
+        }
+
         public CashWithdrawlPageConfirmation()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void NotifyPropertyChanged(string info)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
         }
 
         private void ConfirmWithdrawlAmountChangeButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToCashWithdrawlPage();
+            MainWindow.ChangeToCashWithdrawlPage(MainWindow.from);
         }
 
         private void ConfirmWithdrawlAmountCancelButton(object sender, RoutedEventArgs e)
@@ -38,6 +69,7 @@ namespace BankMachine
         private void ConfirmWithdrawlAmountOkButton(object sender, RoutedEventArgs e)
         {
             MainWindow.ChangeToCompleteTransactionsPage();
+
         }
     }
 }

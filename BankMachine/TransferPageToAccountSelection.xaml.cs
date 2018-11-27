@@ -26,17 +26,17 @@ namespace BankMachine
         }
         private void TransferToChequingButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToTransferPage();
+            MainWindow.ChangeToTransferPage(Account.AccountType.chequings);
         }
 
         private void TransferToSavingsButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToTransferPage();
+            MainWindow.ChangeToTransferPage(Account.AccountType.savings);
         }
 
         private void TransferToCreditCardButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToTransferPage();
+            MainWindow.ChangeToTransferPage(Account.AccountType.creditcard);
         }
 
         private void TransferToCancelButton(object sender, RoutedEventArgs e)

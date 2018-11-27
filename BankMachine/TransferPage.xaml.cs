@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +19,30 @@ namespace BankMachine
     /// <summary>
     /// Interaction logic for TransferPage.xaml
     /// </summary>
-    public partial class TransferPage : UserControl
+    public partial class TransferPage : UserControl, INotifyPropertyChanged
     {
+        public int amount = 0;
+
+        public int Amount
+        {
+            get { return amount; }
+            set
+            {
+                amount = value; NotifyPropertyChanged("Amount");
+            }
+        }
+
         public TransferPage()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void NotifyPropertyChanged(string info)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
         }
 
         private void EnterTransferAmountCancelButton(object sender, RoutedEventArgs e)
@@ -32,7 +52,7 @@ namespace BankMachine
 
         private void EnterTransferAmountOkButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToTransferPageConfirmation();
+            MainWindow.ChangeToTransferPageConfirmation(Amount);
         }
     }
 }

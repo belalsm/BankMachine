@@ -27,17 +27,20 @@ namespace BankMachine
 
         private void WithdrawFromChequingButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToCashWithdrawlPage();
+            MainWindow.ChangeToCashWithdrawlPage(Account.AccountType.chequings);
+
         }
 
         private void WithdrawFromSavingsButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToCashWithdrawlPage();
+            MainWindow.ChangeToCashWithdrawlPage(Account.AccountType.savings);
+
         }
         
         private void WithdrawFromCreditCardButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToCashWithdrawlPage();
+            MainWindow.ChangeToCashWithdrawlPage(Account.AccountType.creditcard);
+
         }
 
         private void WithdrawlCancelButton(object sender, RoutedEventArgs e)
