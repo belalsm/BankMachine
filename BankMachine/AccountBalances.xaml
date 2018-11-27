@@ -9,10 +9,10 @@
     <Grid>
         <Label Content="Account:" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="{Binding AccountType}" HorizontalAlignment="Left" Margin="235,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Label Content="Balace:" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
+        <Label Content="Balance:" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="{Binding Balance}"  HorizontalAlignment="Left" Margin="235,150,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="Cancel Transcation" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="AccountBalancesCancelButton"/>
-        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="AccountBalancesOkButton"/>
+        <Button Content="Cancel Transcation" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="AccountBalancesCancelButton" Background="White" FontWeight="Bold"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="AccountBalancesOkButton" Background="White" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

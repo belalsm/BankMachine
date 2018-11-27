@@ -8,7 +8,7 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid >
         <Label Content="Please Select One of the Options Below" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="313" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="Scan Card" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Width="258" Height="48" Click="ScanCard"/>
-        <Button Content="Enter Account Number" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="258" RenderTransformOrigin="0.037,2.208" Height="52" Click="EnterAccountNumber"/>
+        <Button Content="Scan Card" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Width="258" Height="48" Click="ScanCard" Background="White" FontWeight="Bold"/>
+        <Button Content="Enter Account Number" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="258" RenderTransformOrigin="0.037,2.208" Height="52" Click="EnterAccountNumber" Background="White" FontWeight="Bold"/>
     </Grid>
 </UserControl>

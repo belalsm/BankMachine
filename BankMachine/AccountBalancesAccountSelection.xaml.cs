@@ -27,17 +27,17 @@ namespace BankMachine
 
         private void BalanceForChequingButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.chequings);
+            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.Chequings);
         }
 
         private void BalanceForSavingsButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.savings);
+            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.Savings);
         }
 
         private void BalanceForCreditCardButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.creditcard);
+            MainWindow.ChangeToAccountBalancesScreen(Account.AccountType.Creditcard);
         }
 
         private void BalanceCancelButton(object sender, RoutedEventArgs e)

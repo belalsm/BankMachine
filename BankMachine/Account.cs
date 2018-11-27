@@ -9,7 +9,7 @@ namespace BankMachine
     public class Account
     {
 
-        public enum AccountType {savings, creditcard, chequings }
+        public enum AccountType {Savings, Creditcard, Chequings }
         public enum AccountTransaction { Deposit, Withdraw, Transfer }
 
     }

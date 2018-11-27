@@ -8,10 +8,10 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
         <Label Content="Please Select an Account" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="236" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="From Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromChequingButton"/>
-        <Button Content="From Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromSavingsButton"/>
-        <Button Content="From Credit Card" HorizontalAlignment="Right" Margin="0,205,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromCreditCardButton"/>
-        <Button Content="Cancel Transcation" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="TransferFromCancelButton"/>
+        <Button Content="From Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromChequingButton" Background="White" FontWeight="Bold"/>
+        <Button Content="From Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromSavingsButton" Background="White" FontWeight="Bold"/>
+        <Button Content="From Credit Card" HorizontalAlignment="Right" Margin="0,205,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromCreditCardButton" Background="White" FontWeight="Bold"/>
+        <Button Content="Cancel Transcation" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="TransferFromCancelButton" Background="White" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

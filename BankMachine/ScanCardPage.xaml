@@ -8,8 +8,8 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
         <Label Content="Please Scan your Card" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ScanCardCancelButton"/>
-        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="ScanCardOkButton"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="ScanCardCancelButton" Background="White" FontWeight="Bold"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,275,10,0" VerticalAlignment="Top" Width="100" Height="40" Click="ScanCardOkButton" Background="White" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

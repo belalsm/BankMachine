@@ -28,17 +28,17 @@ namespace BankMachine
 
         private void DepositToChequingButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToDepositPage(Account.AccountType.chequings);
+            MainWindow.ChangeToDepositPage(Account.AccountType.Chequings);
         }
 
         private void DepositToSavingsButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToDepositPage(Account.AccountType.savings);
+            MainWindow.ChangeToDepositPage(Account.AccountType.Savings);
         }
 
         private void DepositToCreditCardButton(object sender, RoutedEventArgs e)
         {
-            MainWindow.ChangeToDepositPage(Account.AccountType.creditcard);
+            MainWindow.ChangeToDepositPage(Account.AccountType.Creditcard);
         }
 
         private void DepositCancelButton(object sender, RoutedEventArgs e)

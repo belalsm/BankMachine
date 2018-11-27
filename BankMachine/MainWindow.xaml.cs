@@ -66,17 +66,17 @@ namespace BankMachine
         public static void ChangeToAccountBalancesScreen(Account.AccountType selectedAccount)
         {
             from = selectedAccount;
-            if (selectedAccount == Account.AccountType.chequings) {
+            if (selectedAccount == Account.AccountType.Chequings) {
                 accountBalances.Balance = chequingBalance;
-                accountBalances.AccountType = Account.AccountType.chequings.ToString();
+                accountBalances.AccountType = Account.AccountType.Chequings.ToString();
             }
-            if (selectedAccount == Account.AccountType.savings) {
+            if (selectedAccount == Account.AccountType.Savings) {
                 accountBalances.Balance = savingsBalance;
-                accountBalances.AccountType = Account.AccountType.savings.ToString();
+                accountBalances.AccountType = Account.AccountType.Savings.ToString();
             }
-            if (selectedAccount == Account.AccountType.creditcard) {
+            if (selectedAccount == Account.AccountType.Creditcard) {
                 accountBalances.Balance = creditCardBalance;
-                accountBalances.AccountType = Account.AccountType.creditcard.ToString();
+                accountBalances.AccountType = Account.AccountType.Creditcard.ToString();
             }
             main.Content = accountBalances;
         }
@@ -185,38 +185,38 @@ namespace BankMachine
         public static void ChangeToTransferPageToAccountSelection(Account.AccountType fromAccount)
         {
             from = fromAccount;
-            if (from == Account.AccountType.chequings) { transferPageToAccountSelection.ToChequing.IsEnabled = false; }
-            if (from == Account.AccountType.savings) { transferPageToAccountSelection.ToSavings.IsEnabled = false; }
-            if (from == Account.AccountType.creditcard) { transferPageToAccountSelection.ToCreditCard.IsEnabled = false; }
+            if (from == Account.AccountType.Chequings) { transferPageToAccountSelection.ToChequing.IsEnabled = false; }
+            if (from == Account.AccountType.Savings) { transferPageToAccountSelection.ToSavings.IsEnabled = false; }
+            if (from == Account.AccountType.Creditcard) { transferPageToAccountSelection.ToCreditCard.IsEnabled = false; }
             main.Content = transferPageToAccountSelection;
         }
 
         public static void Transfer(Account.AccountType accountFrom, Account.AccountType accountTo, int amount)
         {
 
-            if (accountFrom == Account.AccountType.chequings && accountTo == Account.AccountType.creditcard) { chequingBalance -= amount; creditCardBalance += amount; }
-            if (accountFrom == Account.AccountType.chequings && accountTo == Account.AccountType.savings) { chequingBalance -= amount; savingsBalance += amount; }
+            if (accountFrom == Account.AccountType.Chequings && accountTo == Account.AccountType.Creditcard) { chequingBalance -= amount; creditCardBalance += amount; }
+            if (accountFrom == Account.AccountType.Chequings && accountTo == Account.AccountType.Savings) { chequingBalance -= amount; savingsBalance += amount; }
 
-            if (accountFrom == Account.AccountType.creditcard && accountTo == Account.AccountType.chequings) { creditCardBalance -= amount; chequingBalance += amount; }
-            if (accountFrom == Account.AccountType.creditcard && accountTo == Account.AccountType.savings) { creditCardBalance -= amount; savingsBalance += amount; }
+            if (accountFrom == Account.AccountType.Creditcard && accountTo == Account.AccountType.Chequings) { creditCardBalance -= amount; chequingBalance += amount; }
+            if (accountFrom == Account.AccountType.Creditcard && accountTo == Account.AccountType.Savings) { creditCardBalance -= amount; savingsBalance += amount; }
 
-            if (accountFrom == Account.AccountType.savings && accountTo == Account.AccountType.creditcard) { savingsBalance -= amount; creditCardBalance += amount; }
-            if (accountFrom == Account.AccountType.savings && accountTo == Account.AccountType.chequings) { savingsBalance -= amount; chequingBalance += amount; }
+            if (accountFrom == Account.AccountType.Savings && accountTo == Account.AccountType.Creditcard) { savingsBalance -= amount; creditCardBalance += amount; }
+            if (accountFrom == Account.AccountType.Savings && accountTo == Account.AccountType.Chequings) { savingsBalance -= amount; chequingBalance += amount; }
 
         }
 
         public static void Deposit(Account.AccountType accountTo, int amount)
         {
-            if (accountTo == Account.AccountType.chequings) { chequingBalance += amount; }
-            if (accountTo == Account.AccountType.creditcard) { creditCardBalance += amount; }
-            if (accountTo == Account.AccountType.savings) { savingsBalance += amount; }
+            if (accountTo == Account.AccountType.Chequings) { chequingBalance += amount; }
+            if (accountTo == Account.AccountType.Creditcard) { creditCardBalance += amount; }
+            if (accountTo == Account.AccountType.Savings) { savingsBalance += amount; }
         }
 
         public static void Withdraw(Account.AccountType accountFrom, int amount)
         {
-            if (accountFrom == Account.AccountType.chequings) { chequingBalance -= amount; }
-            if (accountFrom == Account.AccountType.creditcard) { creditCardBalance -= amount; }
-            if (accountFrom == Account.AccountType.savings) { savingsBalance -= amount; }
+            if (accountFrom == Account.AccountType.Chequings) { chequingBalance -= amount; }
+            if (accountFrom == Account.AccountType.Creditcard) { creditCardBalance -= amount; }
+            if (accountFrom == Account.AccountType.Savings) { savingsBalance -= amount; }
         }
 
 

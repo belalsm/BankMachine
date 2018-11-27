@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankMachine"      
         mc:Ignorable="d"
-        Title="BankMachine" Height="375" Width="500">
-    <Grid Background="#FF35668E">
-        <ContentControl Name="ContentMain"  Width="Auto" Opacity="1" Background="Transparent" ></ContentControl>
+        Title="BankMachine" Height="375" Width="500" Background="#FF1A238C">
+    <Grid Background="#FF110063">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="248*"/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl Name="ContentMain"  Width="Auto" Opacity="1" Background="#FF042940" Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4" ></ContentControl>
     </Grid>
 
 </Window>
