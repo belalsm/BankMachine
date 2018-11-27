@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
+        <Label Content="Transfer"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" RenderTransformOrigin="3.406,2" Width="500" Height="25" FontWeight="Bold" FontSize="10" FontFamily="Arial" Foreground="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Please Select an Account" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="236" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Button Content="From Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromChequingButton" Background="White" FontWeight="Bold"/>
         <Button Content="From Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromSavingsButton" Background="White" FontWeight="Bold"/>

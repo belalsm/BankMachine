@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
+        <Label Content="Withdrawal"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Background="White" BorderBrush="Black" RenderTransformOrigin="3.406,2" Width="500" Height="25" FontWeight="Bold" FontSize="10" FontFamily="Arial" Foreground="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Please confirm this transaction." HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="Withdraw:" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
         <Label Content="{Binding Amount}"  HorizontalAlignment="Left" Margin="235,125,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2"  Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />

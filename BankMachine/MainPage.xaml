@@ -8,7 +8,7 @@
              d:DesignHeight="350" d:DesignWidth="500">
     <Grid>
         <Label Content="Please Select a Transaction" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="White" RenderTransformOrigin="3.406,2" Width="236" Height="36" FontWeight="Bold" FontSize="16" FontFamily="Arial" Foreground="White" />
-        <Button Content="Cash Withdrawl" HorizontalAlignment="Right" Margin="0,125,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="CashWithdrawlButton" Background="White" FontWeight="Bold"/>
+        <Button Content="Cash Withdrawal" HorizontalAlignment="Right" Margin="0,125,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="CashWithdrawlButton" Background="White" FontWeight="Bold"/>
         <Button Content="Deposit" HorizontalAlignment="Right" Margin="0,200,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="DepositButton" Background="White" FontWeight="Bold"/>
         <Button Content="Account Balances" HorizontalAlignment="Left" Margin="20,125,0,0" VerticalAlignment="Top" Width="200" Height="48" Click="AccountBalancesButton" Background="White" FontWeight="Bold"/>
         <Button Content="Transfer" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferButton" Background="White" FontWeight="Bold"/>
