@@ -63,8 +63,21 @@ namespace BankMachine
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
         }
 
-        public static void ChangeToAccountBalancesScreen()
+        public static void ChangeToAccountBalancesScreen(Account.AccountType selectedAccount)
         {
+            from = selectedAccount;
+            if (selectedAccount == Account.AccountType.chequings) {
+                accountBalances.Balance = chequingBalance;
+                accountBalances.AccountType = Account.AccountType.chequings.ToString();
+            }
+            if (selectedAccount == Account.AccountType.savings) {
+                accountBalances.Balance = savingsBalance;
+                accountBalances.AccountType = Account.AccountType.savings.ToString();
+            }
+            if (selectedAccount == Account.AccountType.creditcard) {
+                accountBalances.Balance = creditCardBalance;
+                accountBalances.AccountType = Account.AccountType.creditcard.ToString();
+            }
             main.Content = accountBalances;
         }
         public static void ChangeToAccountBalancesSelectionScreen()
@@ -99,6 +112,11 @@ namespace BankMachine
             if (currentTransaction == Account.AccountTransaction.Deposit)
             {
                 Deposit(to, amount);
+            }
+            if (currentTransaction == Account.AccountTransaction.Transfer)
+            {
+
+                Transfer(from, to, amount);
             }
 
             amount = 0;
@@ -140,20 +158,31 @@ namespace BankMachine
         {
             main.Content = scanCardPage;
         }
-        public static void ChangeToTransferPage()
+        public static void ChangeToTransferPage(Account.AccountType toAccount)
         {
+            to = toAccount;
+            transferPage.Amount = 0;
             main.Content = transferPage;
         }
-        public static void ChangeToTransferPageConfirmation()
+        public static void ChangeToTransferPageConfirmation(int transferAmount)
         {
+            amount = transferAmount;
+            transferPageConfirmation.Amount = amount;
+            transferPageConfirmation.FromAccountType = from.ToString();
+            transferPageConfirmation.fromTypeEnum = from;
+            transferPageConfirmation.ToAccountType = to.ToString();
+            transferPageConfirmation.toTypeEnum = to;
             main.Content = transferPageConfirmation;
+            currentTransaction = Account.AccountTransaction.Transfer;
+
         }
         public static void ChangeToTransferPageFromAccountSelection()
         {
             main.Content = transferPageFromAccountSelection;
         }
-        public static void ChangeToTransferPageToAccountSelection()
+        public static void ChangeToTransferPageToAccountSelection(Account.AccountType fromAccount)
         {
+            from = fromAccount;
             main.Content = transferPageToAccountSelection;
         }
 
