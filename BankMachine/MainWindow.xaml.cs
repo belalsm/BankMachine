@@ -96,6 +96,10 @@ namespace BankMachine
             {
                 Withdraw(from, amount);
             }
+            if (currentTransaction == Account.AccountTransaction.Deposit)
+            {
+                Deposit(to, amount);
+            }
 
             amount = 0;
             main.Content = completeTransactionsPage;
@@ -153,7 +157,7 @@ namespace BankMachine
             main.Content = transferPageToAccountSelection;
         }
 
-        public void Transfer(Account.AccountType accountFrom, Account.AccountType accountTo, int amount)
+        public static void Transfer(Account.AccountType accountFrom, Account.AccountType accountTo, int amount)
         {
 
             if (accountFrom == Account.AccountType.chequings && accountTo == Account.AccountType.creditcard) { chequingBalance -= amount; creditCardBalance += amount; }
@@ -167,7 +171,7 @@ namespace BankMachine
 
         }
 
-        public void Deposit(Account.AccountType accountTo, int amount)
+        public static void Deposit(Account.AccountType accountTo, int amount)
         {
             if (accountTo == Account.AccountType.chequings) { chequingBalance += amount; }
             if (accountTo == Account.AccountType.creditcard) { creditCardBalance += amount; }
