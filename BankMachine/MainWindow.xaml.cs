@@ -115,7 +115,9 @@ namespace BankMachine
             }
             if (currentTransaction == Account.AccountTransaction.Transfer)
             {
-
+                transferPageToAccountSelection.ToChequing.IsEnabled = true;
+                transferPageToAccountSelection.ToCreditCard.IsEnabled = true;
+                transferPageToAccountSelection.ToSavings.IsEnabled = true;
                 Transfer(from, to, amount);
             }
 
@@ -183,6 +185,9 @@ namespace BankMachine
         public static void ChangeToTransferPageToAccountSelection(Account.AccountType fromAccount)
         {
             from = fromAccount;
+            if (from == Account.AccountType.chequings) { transferPageToAccountSelection.ToChequing.IsEnabled = false; }
+            if (from == Account.AccountType.savings) { transferPageToAccountSelection.ToSavings.IsEnabled = false; }
+            if (from == Account.AccountType.creditcard) { transferPageToAccountSelection.ToCreditCard.IsEnabled = false; }
             main.Content = transferPageToAccountSelection;
         }
 
