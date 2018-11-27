@@ -11,7 +11,7 @@
         <Button Content="From Chequing" HorizontalAlignment="Right" Margin="0,100,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromChequingButton"/>
         <Button Content="From Savings" HorizontalAlignment="Right" Margin="0,152,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromSavingsButton"/>
         <Button Content="From Credit Card" HorizontalAlignment="Right" Margin="0,205,20,0" VerticalAlignment="Top" Width="200" Height="48" Click="TransferFromCreditCardButton"/>
-        <Button Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="TransferFromCancelButton"/>
+        <Button Content="Cancel Transcation" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="125" Height="40" Click="TransferFromCancelButton"/>
 
     </Grid>
 </UserControl>
